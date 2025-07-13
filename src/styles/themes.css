@@ -1,0 +1,26 @@
+/* src/styles/themes.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --bg-color: #dbc4c4;
+  --text-color: #3c2424;
+  --highlight-color: #cb506b;
+  --water-color: #38a9a2;
+
+  --font-main: 'Poppins', sans-serif;
+  --font-deco: 'Nunito', sans-serif;
+}
+
+[data-theme='dark'] {
+  --bg-color: #3c2424;
+  --text-color: #dbc4c4;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
